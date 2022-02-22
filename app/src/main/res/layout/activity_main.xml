@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/edNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombreapellidos"
+        android:singleLine="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/sEdad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/edad"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNombre" />
+
+    <TextView
+        android:id="@+id/tvCocacola"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="84dp"
+        android:text="@string/cocacola"
+        app:layout_constraintEnd_toStartOf="@+id/edCocacola"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sEdad" />
+
+    <EditText
+        android:id="@+id/edCocacola"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="76dp"
+        android:hint="@string/cero"
+        android:inputType="number"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sEdad" />
+
+    <TextView
+        android:id="@+id/tvKasLimon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/kaslimon"
+        app:layout_constraintEnd_toStartOf="@+id/edKasLimon"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCocacola" />
+
+    <EditText
+        android:id="@+id/edKasLimon"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="76dp"
+        android:hint="@string/cero"
+        android:inputType="number"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edCocacola" />
+
+    <TextView
+        android:id="@+id/tvKasNaranja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="84dp"
+        android:text="@string/kasnaranja"
+        app:layout_constraintEnd_toStartOf="@+id/edKasNaranja"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKasLimon" />
+
+    <EditText
+        android:id="@+id/edKasNaranja"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="76dp"
+        android:hint="@string/cero"
+        android:inputType="number"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edKasLimon" />
+
+    <TextView
+        android:id="@+id/tvRedBull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/redbull"
+        app:layout_constraintEnd_toStartOf="@+id/edRedBull"
+        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvKasNaranja" />
+
+    <EditText
+        android:id="@+id/edRedBull"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="76dp"
+        android:hint="@string/cero"
+        android:inputType="number"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edKasNaranja" />
+
+
+    <TextView
+        android:id="@+id/tvCerveza"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/cerveza"
+        app:layout_constraintHorizontal_bias="0.441"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/edCerveza"
+        app:layout_constraintTop_toBottomOf="@+id/tvRedBull" />
+
+    <EditText
+        android:id="@+id/edCerveza"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="76dp"
+        android:hint="@string/cero"
+        android:inputType="number"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edRedBull" />
+
+    <TextView
+        android:id="@+id/tvVino"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="80dp"
+        android:text="@string/vino"
+        app:layout_constraintEnd_toStartOf="@+id/edVino"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCerveza" />
+
+    <EditText
+        android:id="@+id/edVino"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="76dp"
+        android:hint="@string/cero"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/bCalcular"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edCerveza"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/bCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/comprar"
+        app:layout_constraintBottom_toTopOf="@+id/tvResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvVino"
+        app:layout_constraintVertical_bias="0.717" />
+
+    <TextView
+        android:id="@+id/tvResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
