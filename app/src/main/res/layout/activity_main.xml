@@ -164,6 +164,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="140dp"
         android:layout_marginBottom="16dp"
+        android:background="@color/black"
         android:text="@string/comprar"
         app:layout_constraintBottom_toTopOf="@+id/tvResultado"
         app:layout_constraintEnd_toEndOf="parent"

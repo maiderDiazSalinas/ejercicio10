@@ -10,4 +10,9 @@
     <string name="edad">Soy mayor de edad</string>
     <string name="cero">0</string>
     <string name="comprar">Comprar</string>
+    <string name="pagar">Pagar</string>
+    <string name="num_tarjeta">número de la tarjeta</string>
+    <string name="mes">mes</string>
+    <string name="anio">año</string>
+    <string name="cvv">cvv</string>
 </resources>
